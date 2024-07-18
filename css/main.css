@@ -84,7 +84,7 @@
 .space-body {
   background-image: url("../images/space-bg.png");
   background-repeat: no-repeat;
-  background-size: 100% 250vh;
+  background-size: 100% 150vh;
 }
 
 .space-header {
@@ -455,6 +455,205 @@
     display: inline-block;
   }
 }
+.moon-body {
+  background-image: url("../images/moon-backgroundimg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 160vh;
+}
+
+.moon-header {
+  padding: 9px 0px;
+}
+
+.moon__icon-img {
+  margin-left: 50px;
+}
+
+.header {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0px;
+}
+
+.moon__icon-img {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.moon__list {
+  background: rgba(255, 255, 255, 0.0392156863);
+  padding: 0 123px 0 165px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.moon__item {
+  position: relative;
+  overflow: hidden;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+.moon__item:hover::before {
+  left: 0;
+}
+.moon__item:hover::after {
+  right: 0;
+}
+
+.moon__item::before {
+  content: "";
+  width: 50%;
+  height: 3px;
+  position: absolute;
+  background-color: white;
+  left: -100%;
+  bottom: 0px;
+  transition: all 0.3s linear;
+}
+
+.moon__item::after {
+  content: "";
+  width: 50%;
+  height: 3px;
+  position: absolute;
+  background-color: white;
+  right: -100%;
+  bottom: 0px;
+  transition: all 0.3s linear;
+}
+
+.moon__header-link {
+  margin-bottom: 0px;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  line-height: 19.2px;
+  text-transform: inherit;
+  font-family: Barlow Condensed;
+}
+
+.moon-section {
+  padding: 76px 0 116px;
+}
+
+.moon {
+  margin-top: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 206px;
+}
+
+.moon-hero__text-wrapper {
+  width: 444px;
+}
+
+.moon__title {
+  margin-left: 80px;
+  display: flex;
+  gap: 28px;
+  font-family: Barlow Condensed;
+  margin-bottom: 64px;
+  font-size: 28px;
+  font-weight: 400;
+  color: white;
+  line-height: 33.6px;
+  text-transform: uppercase;
+}
+
+.span {
+  font-family: Barlow Condensed;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 33.6px;
+  letter-spacing: 4.7249999046px;
+  color: #8F9095;
+}
+
+.moons__list {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 48px;
+}
+
+.moons__link {
+  margin-bottom: 37px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #D0D6F9;
+  line-height: 19.2px;
+  text-transform: uppercase;
+  font-family: Barlow Condensed;
+  transition: all 0.3 linear;
+}
+.moons__link:hover {
+  color: white;
+}
+.moons__link:active {
+  color: #0B0D17;
+}
+
+.moon__subtitle {
+  margin-top: 37px;
+  margin-bottom: 37px;
+  font-size: 100px;
+  font-weight: 400;
+  color: white;
+  line-height: 114.2px;
+  text-transform: uppercase;
+  font-family: Bellefair;
+}
+
+.moon__text {
+  margin-bottom: 54px;
+  font-family: Barlow;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #D0D6F9;
+}
+
+.moon__content-wrap {
+  display: flex;
+  align-items: center;
+  gap: 79px;
+}
+
+.moon__wrapper {
+  margin-top: 28px;
+}
+
+.moon__strong {
+  display: inline-block;
+  font-family: Barlow Condensed;
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #D0D6F9;
+  line-height: 2.36px;
+  text-transform: uppercase;
+}
+
+.moon__subtext {
+  font-family: Bellefair;
+  margin-bottom: 0px;
+  font-size: 28px;
+  font-weight: 400;
+  color: white;
+  line-height: 32.09px;
+  text-transform: uppercase;
+}
+
+.hr {
+  color: #8F9095;
+}
+
 .commander-site-header {
   padding: 9px 0;
   margin-top: 5px;
