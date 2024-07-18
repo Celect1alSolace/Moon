@@ -84,7 +84,7 @@
 .space-body {
   background-image: url("../images/space-bg.png");
   background-repeat: no-repeat;
-  background-size: 100% 130vh;
+  background-size: 100% 250vh;
 }
 
 .space-header {
@@ -223,7 +223,7 @@
   .space-body {
     background-image: url(/images/space-tablet-bg.png);
     background-repeat: no-repeat;
-    background-size: 100% 130vh;
+    background-size: 100% 250vh;
   }
   .space-site-header {
     padding: 0;
