@@ -1,0 +1,198 @@
+// Vehicle Header
+.vehicle-site-header {
+    padding: 9px 0;
+    margin-top: 5px;
+}
+.vehicle-body{
+    background-image: url(../images/vehicle-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 150vh;
+}
+.vehicle-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.vehicle-header__icon {
+    display: inline-block;
+}
+.vehicle-header__list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 123px 0 165px;
+    gap: 48px;
+    background-color: #FFFFFF0A;
+    backdrop-filter: blur(30px);
+    
+    &::before{
+        position: absolute;
+        content: "";
+        width: 400px;
+        height: 1px;
+        background-color: $white-clr;
+        left: -380px;
+    }
+}
+.vehicle-header__item{
+    position: relative;
+    overflow: hidden;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    
+    &:hover::before{
+        left: 0;
+    }
+    &:hover::after{
+        right: 0;
+    }
+}
+
+.vehicle-header__item::before {
+    content: "";
+    width: 50%;
+    height: 3px;
+    position: absolute;
+    background-color: $white-clr;
+    left: -100%;
+    bottom: 0px;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.vehicle-header__item::after {
+    content: "";
+    width: 50%;
+    height: 3px;
+    position: absolute;
+    background-color: $white-clr;
+    right: -100%;
+    bottom: 0px;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.vehicle-header__item-texts {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    transition: all 0.3s linear;
+    border-bottom: 0px solid $white-clr;
+}
+.vehicle__header-number {
+    font-family: Barlow Condensed;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    letter-spacing: 2.700000047683716px;
+    color: $white-clr;
+}
+.vehicle__header-text {
+    font-family: Barlow Condensed;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    letter-spacing: 2.700000047683716px;
+    color: $white-clr;
+    text-transform: uppercase;
+}
+// Vehicle Header End
+// Vehicle Main Start
+.vehicle-hero-section {
+    padding: 76px 0 101px;
+}
+.vehicle-hero__subtitle-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-left: 50px;
+}
+.vehicle-hero__number {
+    font-family: Barlow Condensed;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33.6px;
+    letter-spacing: 4.724999904632568px;
+    color: $gray-clr;
+}
+.vehicle-hero__subtitle {
+    font-family: Barlow Condensed;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 33.6px;
+    letter-spacing: 4.724999904632568px;
+    color: $white-clr;
+}
+.vehicle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 130px;
+}
+.vehicle-hero__content-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+.vehicle-hero__links{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.vehicle-hero__link {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border: 1px solid $gray-clr;
+    border-radius: 50%;
+    background-color: transparent;
+    font-family: Bellefair; 
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 36.67px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: $white-clr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s linear;
+    
+    &:hover{
+        background-color: $white-clr;
+        color: $black-clr;
+    }
+    &:active{
+        box-shadow: 0 0 10px 2px $white-clr;
+    }
+}
+.vehicle-hero__strong {
+    display: inline-block;
+    margin-bottom: 11px;
+    font-family: Barlow Condensed;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    letter-spacing: 2.700000047683716px;
+    color: $whitegray-clr;
+}
+.vehicle-hero__title {
+    margin-bottom: 17px;
+    font-family: Bellefair;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 64.18px;
+    color: $white-clr;
+}
+.vehicle-hero__text-wrapper {
+    width: 444px;
+}
+.vehicle-hero__text {
+    font-family: Barlow;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    color: $whitegray-clr;
+}
+// Vehicle Main End

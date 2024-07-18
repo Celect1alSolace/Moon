@@ -1,0 +1,383 @@
+// Space Header
+.space-site-header {
+    padding: 9px 0;
+    margin-top: 5px;
+}
+.space-body{
+    background-image: url("../images/space-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 130vh;
+}
+.space-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.space-header__icon {
+    display: inline-block;
+}
+.space-header__list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 123px 0 165px;
+    gap: 48px;
+    background-color: #FFFFFF0A;
+    backdrop-filter: blur(30px);
+    
+    &::before{
+        position: absolute;
+        content: "";
+        width: 473px;
+        height: 1px;
+        background-color: $white-clr;
+        left: -443px;
+    }
+}
+.space-header__item{
+    position: relative;
+    overflow: hidden;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    
+    &:hover::before{
+        left: 0;
+    }
+    &:hover::after{
+        right: 0;
+    }
+}
+
+.space-header__item::before {
+    content: "";
+    width: 50%;
+    height: 3px;
+    position: absolute;
+    background-color: $white-clr;
+    left: -100%;
+    bottom: 0px;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.space-header__item::after {
+    content: "";
+    width: 50%;
+    height: 3px;
+    position: absolute;
+    background-color: $white-clr;
+    right: -100%;
+    bottom: 0px;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.space-header__item-texts {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    transition: all 0.3s linear;
+    border-bottom: 0px solid $white-clr;
+}
+.space__header-number {
+    font-family: Barlow Condensed;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    letter-spacing: 2.700000047683716px;
+    color: $white-clr;
+}
+.space__header-text {
+    font-family: Barlow Condensed;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    letter-spacing: 2.700000047683716px;
+    color: $white-clr;
+    text-transform: uppercase;
+}
+.space-header__content-wrapper {
+    display: inline-block;
+    width: 274px;
+    height: 274px;
+    border: 1px solid $white-clr;
+    border-radius: 50%;
+    background-color: $white-clr;
+    font-family: Bellefair;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 36.67px;
+    letter-spacing: 2px;
+    color: $black-clr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s linear;
+    
+    &:hover{
+        background-color: transparent;
+        color: $white-clr;
+    }
+}
+
+// Responsive start
+// Tablet Start
+@media(max-width:1390px){
+    .space-header__list::before{
+        width: 300px;
+        left: -300px;
+    }
+}
+@media(max-width:1230px){
+    .space-header__list::before{
+        width: 200px;
+        left: -200px;
+    }
+}
+@media(max-width:1140px){
+    .space-header__list::before{
+        display: none;
+    }
+}
+@media(max-width:1000px){
+    .space-body{
+        background-image: url(/images/space-tablet-bg.png);
+        background-repeat: no-repeat;
+        background-size: 100% 130vh;
+    }
+    .space-site-header {
+        padding: 0;
+        margin-top: 0px;
+    }
+    .space-header__list{
+        padding: 0 48px;
+        gap: 37px;
+        margin-left: 15px;
+    }
+    
+    .space-header__list::before{
+        display: none;
+    }
+    .space__header-text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.8px;
+        letter-spacing: 2.362499952316284px;  
+    }
+    .space__header-number{
+        display: none;
+    }
+    .space-header__list{
+        gap: 37px;
+    }
+    .space-hamburger-icon{
+        display: none;
+    }
+    
+}
+// Tablet End
+// Phone Start
+@media(max-width:620px){
+    .space-header__list{
+        display: none;
+    }
+    .space-hamburger-icon{
+        display: inline-block;
+    }
+    .space-site-header{
+        padding: 9px 0;
+    }
+}
+// Phone End
+// Responsive End
+// Space Header End
+// Space Main Start
+.space-hero-section {
+    padding: 131px 0 131px;
+}
+.space {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 386px;
+}
+.space-hero__texts-wrapper {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.space-hero__strong {   
+    display: inline-block;
+    font-family: Barlow Condensed;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 33.6px;
+    letter-spacing: 4.724999904632568px;
+    color: $whitegray-clr;
+}
+.space-hero__title {
+    margin: 0px;
+    font-family: Bellefair;
+    font-size: 150px;
+    font-weight: 400;
+    line-height: 171.9px;
+    color: $white-clr;
+    text-transform: uppercase;
+}
+.space-hero__text {
+    font-family: Barlow;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    color: $whitegray-clr;
+}
+
+.space-hamburger-icon{
+    display: none;
+}
+.space-hero__content-wrapper {
+    display: inline-block;
+    width: 274px;
+    height: 274px;
+    border: 1px solid $white-clr;
+    border-radius: 50%;
+    background-color: $white-clr;
+    font-family: Bellefair;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 36.67px;
+    letter-spacing: 2px;
+    color: $black-clr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s linear;
+    
+    &:hover{
+        background-color: transparent;
+        color: $white-clr;
+    }
+}
+// Space Main End
+// Responsive Start
+@media(max-width:1180px){
+    .space-hero-section {
+        padding: 108px 0 90px;
+    }
+    .space {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 156px;
+    }
+    .space-hero__content-wrapper{
+        width: 242px;
+        height: 242px;
+    }
+    .space-hero__strong{
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 3.375px;
+    }
+    .space-hero__title {
+        line-height: 150px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+    .space-hero__text{
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+}
+@media(max-width:620px){
+    .space-hero-section {
+        padding: 48px 0 48px;
+    }
+    .space {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 81px;
+    }
+    .space-hero__content-wrapper{
+        width: 150px;
+        height: 150px;
+    }
+    .space-hero__texts-wrapper{
+        width: 327px;
+    }
+    .space-hero__strong{
+        display: block;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.2px;
+        letter-spacing: 3.375px;
+    }
+    .space-hero__title {
+        display: block;
+        margin: 0 auto;
+        font-size: 80px;
+        font-weight: 400;
+        line-height: 100px;
+        text-align: center;
+    }
+    .space-hero__text{
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+    .space-hamburger-icon{
+        display: inline-block;
+    }
+}
+@media(max-width:360px){
+    .space-hero__content-wrapper{
+        width: 130px;
+        height: 130px;
+    }
+    .space-hero__texts-wrapper{
+        width: 250px;
+    }
+    .space-hero__strong{
+        display: block;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.2px;
+        letter-spacing: 3.375px;
+    }
+    .space-hero__title {
+        display: block;
+        margin: 0 auto;
+        font-size: 80px;
+        font-weight: 400;
+        line-height: 100px;
+        text-align: center;
+    }
+    .space-hero__text{
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+    .space-hamburger-icon{
+        display: inline-block;
+    }
+}
+// Responsive End
