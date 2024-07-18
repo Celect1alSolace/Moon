@@ -1,0 +1,177 @@
+// Commander Header
+.commander-site-header {
+    padding: 9px 0;
+    margin-top: 5px;
+}
+.commander-body{
+    background-image: url("../images/commander-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 150vh;
+}
+.commander-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.commander-header__icon {
+    display: inline-block;
+}
+.commander-header__list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 123px 0 165px;
+    gap: 48px;
+    background-color: #FFFFFF0A;
+    backdrop-filter: blur(30px);
+    
+    &::before{
+        position: absolute;
+        content: "";
+        width: 473px;
+        height: 1px;
+        background-color: $white-clr;
+        left: -443px;
+    }
+}
+.commander-header__item{
+    position: relative;
+    overflow: hidden;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    
+    &:hover::before{
+        left: 0;
+    }
+    &:hover::after{
+        right: 0;
+    }
+}
+
+.commander-header__item::before {
+    content: "";
+    width: 50%;
+    height: 3px;
+    position: absolute;
+    background-color: $white-clr;
+    left: -100%;
+    bottom: 0px;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.commander-header__item::after {
+    content: "";
+    width: 50%;
+    height: 3px;
+    position: absolute;
+    background-color: $white-clr;
+    right: -100%;
+    bottom: 0px;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.commander-header__item-texts {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    transition: all 0.3s linear;
+    border-bottom: 0px solid $white-clr;
+}
+.commander__header-number {
+    font-family: Barlow Condensed;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    letter-spacing: 2.700000047683716px;
+    color: $white-clr;
+}
+.commander__header-text {
+    font-family: Barlow Condensed;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    letter-spacing: 2.700000047683716px;
+    color: $white-clr;
+    text-transform: uppercase;
+}
+// Commander Header End
+// Commander Main Start
+.commander-hero-section {
+    padding-top: 76px;
+}
+.commander {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 81px;
+}
+
+.commander-hero__subtitle-wrapper {
+    display: flex;
+    margin-bottom: 154px;
+    gap: 24px;
+}
+.commander-hero__number {
+    font-family: Barlow Condensed;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33.6px;
+    letter-spacing: 4.724999904632568px;
+    color: $gray-clr;
+}
+.commander-hero__subtitle {
+    font-family: Barlow Condensed;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 33.6px;
+    letter-spacing: 4.724999904632568px;
+    color: $white-clr;
+    text-transform: uppercase;
+}
+.commander-hero__strong {
+    margin-bottom: 15px;
+    font-family: Bellefair;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 36.67px;
+    color: $gray-clr;
+    text-transform: uppercase;
+}
+.commander-hero__title {
+    margin-bottom: 27px;
+    font-family: Bellefair;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 64.18px;
+    color: $white-clr;
+}
+.commander-hero__texts-wrapper {
+    width: 444px;
+}
+.commander-hero__text {
+    margin-bottom: 120px;
+    font-family: Barlow;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    color: $whitegray-clr;
+}
+.commander-hero__mini-btns {
+    display: flex;
+    gap: 24px;
+}
+.commander-hero__mini-btn {
+    width: 15px;
+    height: 15px;
+    background-color: $gray-clr;
+    transition: all 0.3s linear;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover{
+        background-color: $white-clr;
+    }
+}
+// Commander Main End
