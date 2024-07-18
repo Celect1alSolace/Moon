@@ -221,7 +221,7 @@
 }
 @media (max-width: 1000px) {
   .space-body {
-    background-image: url(/images/space-tablet-bg.png);
+    background-image: url(../images/space-tablet-bg.png);
     background-repeat: no-repeat;
     background-size: 100% 250vh;
   }
@@ -681,17 +681,17 @@
   align-items: center;
   padding: 0 123px 0 165px;
   gap: 48px;
-  background-color: rgba(255, 255, 255, 0.0392156863);
+  background-color: hsla(0, 0%, 100%, 0.039);
   -webkit-backdrop-filter: blur(30px);
           backdrop-filter: blur(30px);
 }
 .commander-header__list::before {
   position: absolute;
   content: "";
-  width: 473px;
+  width: 400px;
   height: 1px;
   background-color: white;
-  left: -443px;
+  left: -380px;
 }
 
 .commander-header__item {
